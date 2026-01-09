@@ -134,40 +134,7 @@ export default function Home() {
         </section>
 
         {/* Story */}
-        <section
-          id="story"
-          className="mt-12 grid gap-8 rounded-2xl border border-white/10 bg-white/5 p-6 md:grid-cols-[180px,1fr]"
-        >
-          <div className="mx-auto">
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900">
-              <Image
-                src="/kenny.jpg"
-                alt="Bowie Management"
-                width={360}
-                height={360}
-                className="h-auto w-full object-cover"
-                priority
-              />
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold">My Story</h3>
-
-            <p className="mt-3 text-zinc-300 leading-7">
-              Over the past few years, I’ve accumulated hundreds of thousands of
-              dollars in available credit, started several businesses, and helped
-              many people repair and structure their credit the right way.
-            </p>
-
-            <p className="mt-3 text-zinc-300 leading-7">
-              I also made real mistakes along the way — overextended myself, lost
-              everything, and went through bankruptcy. Those experiences taught
-              me lessons most people never learn until it’s too late, and now I
-              help others move smarter and build stronger financial futures.
-            </p>
-          </div>
-        </section>
+     
 
         {/* Footer */}
         <footer className="mt-10 text-center text-xs text-zinc-500">
