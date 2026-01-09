@@ -1,4 +1,4 @@
-import Image from "next/image";
+mport Image from "next/image";
 
 export default function Home() {
   return (
@@ -23,7 +23,6 @@ export default function Home() {
 
         {/* Hero */}
         <section className="mt-10 grid items-center gap-8 md:grid-cols-2">
-          {/* Left column */}
           <div>
             <h1 className="text-center text-4xl font-semibold tracking-tight md:text-5xl">
               Credit & Funding Specialist
@@ -52,14 +51,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right column */}
+          {/* Consultation Card */}
           <div>
-            {/* Consultation Title (outside the box) */}
             <h2 className="mb-3 text-center text-lg font-semibold text-white">
               Free Consultation
             </h2>
 
-            {/* Consultation Card */}
             <div
               id="consult"
               className="rounded-2xl border border-white/10 bg-white/5 p-6"
@@ -71,14 +68,13 @@ export default function Home() {
                 <span className="font-semibold text-white">upgrade</span> the
                 account and put a card on file to use the{" "}
                 <span className="font-semibold text-white">free trial</span> so
-                we can view all three credit bureaus. You will not be charged — I
-                will downgrade you to the free version before the trial ends.
+                we can view all three credit bureaus. You will not be charged —
+                I will downgrade you to the free version before the trial ends.
               </p>
 
-              {/* (Removed the line you said you wanted to delete) */}
-              {/* <p className="mt-3 text-sm text-zinc-300">
+              <p className="mt-3 text-sm text-zinc-300">
                 Enter your info below and I’ll text you the next step.
-              </p> */}
+              </p>
 
               <div className="mt-5 grid gap-3">
                 <input
