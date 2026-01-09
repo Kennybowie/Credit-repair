@@ -59,12 +59,7 @@ export default function Home() {
               >
                 Start with a Consultation
               </a>
-              <a
-                href="#story"
-                className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition active:scale-[0.99]"
-              >
-                My Story
-              </a>
+              
             </div>
 
             <p className="mt-3 text-xs text-zinc-500">
