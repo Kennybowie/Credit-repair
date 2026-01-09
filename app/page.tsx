@@ -60,14 +60,14 @@ export default function Home() {
           </div>
 
           {/* Consultation Card */}
-    <h2 className="mb-3 text-lg font-semibold text-white">
+  <h2 className="mb-3 text-center text-lg font-semibold text-white">
   Free Consultation
 </h2>
           <div
             id="consult"
             className="rounded-2xl border border-white/10 bg-white/5 p-6"
           >
-            <h2 className="text-lg font-semibold">Free Consultation</h2>
+           
 
 <p className="mt-2 text-sm text-zinc-300 leading-6">
   Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create
