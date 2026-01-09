@@ -32,8 +32,8 @@ export default function Home() {
 
             <p className="mt-4 text-zinc-300 leading-7">
               I help people clean up their credit, build strong profiles, and
-              position themselves to get approved for lines of credit — whether
-              you’re working toward a house, a car, or more financial freedom.
+              position themselves to get approved for lines of credit and loans
+            
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
