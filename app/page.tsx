@@ -77,7 +77,7 @@ export default function Home() {
             id="consult"
             className="rounded-2xl border border-white/10 bg-white/5 p-6"
           >
-            <h2 className="text-lg font-semibold">Initial Consultation</h2>
+            <h2 className="text-lg font-semibold">Free Consultation</h2>
             <p className="mt-1 text-sm text-zinc-300">
               Enter your info and I’ll text you the next step.
             </p>
