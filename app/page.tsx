@@ -52,15 +52,7 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="mt-7 flex gap-3">
-              <a
-                href="#consult"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-black transition active:scale-[0.99]"
-              >
-                Start with a Consultation
-              </a>
-              
-            </div>
+            
 
             <p className="mt-3 text-xs text-zinc-500">
               After you submit your info, I’ll text you the next step.
