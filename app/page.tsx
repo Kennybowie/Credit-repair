@@ -54,9 +54,7 @@ export default function Home() {
 
             
 
-            <p className="mt-3 text-xs text-zinc-500">
-              After you submit your info, I’ll text you the next step.
-            </p>
+           
           </div>
 
           {/* Consultation Card */}
