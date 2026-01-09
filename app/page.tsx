@@ -74,9 +74,20 @@ export default function Home() {
             className="rounded-2xl border border-white/10 bg-white/5 p-6"
           >
             <h2 className="text-lg font-semibold">Free Consultation</h2>
-            <p className="mt-1 text-sm text-zinc-300">
-              Enter your info and I’ll text you the next step.
-            </p>
+
+<p className="mt-2 text-sm text-zinc-300 leading-6">
+  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create
+  an account. When you sign up, please{" "}
+  <span className="font-semibold text-white">upgrade</span> the account and put a
+  card on file to use the{" "}
+  <span className="font-semibold text-white">free trial</span> so we can view all
+  three credit bureaus. You will not be charged — I will downgrade you to the
+  free version before the trial ends.
+</p>
+
+<p className="mt-3 text-sm text-zinc-300">
+  Enter your info below and I’ll text you the next step.
+</p>
 
             <div className="mt-5 grid gap-3">
               <input
