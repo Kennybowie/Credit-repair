@@ -52,20 +52,7 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="mt-7 flex gap-3">
-              <a
-                href="#consult"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-black transition active:scale-[0.99]"
-              >
-                Start with a Consultation
-              </a>
-              <a
-                href="#story"
-                className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition active:scale-[0.99]"
-              >
-                My Story
-              </a>
-            </div>
+            
 
             <p className="mt-3 text-xs text-zinc-500">
               After you submit your info, I’ll text you the next step.
@@ -73,14 +60,37 @@ export default function Home() {
           </div>
 
           {/* Consultation Card */}
+          <p className="mb-4 text-sm text-zinc-300 leading-6">
+  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create
+  an account. When you sign up, please <span className="font-semibold text-white">
+  UPGRADE</span> the account and put a card on file to utilize the
+  <span className="font-semibold text-white"> FREE TRIAL</span> so we can see all
+  three credit bureaus. You will not be charged — I will
+  <span className="font-semibold text-white"> downgrade</span> you to the free
+  version before the trial ends.
+</p>
+<h2 className="mb-3 text-center text-lg font-semibold text-white">
+  Free Consultation
+</h2>
           <div
             id="consult"
             className="rounded-2xl border border-white/10 bg-white/5 p-6"
           >
-            <h2 className="text-lg font-semibold">Free Consultation</h2>
-            <p className="mt-1 text-sm text-zinc-300">
-              Enter your info and I’ll text you the next step.
-            </p>
+           
+
+<p className="mt-2 text-sm text-zinc-300 leading-6">
+  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create
+  an account. When you sign up, please{" "}
+  <span className="font-semibold text-white">upgrade</span> the account and put a
+  card on file to use the{" "}
+  <span className="font-semibold text-white">free trial</span> so we can view all
+  three credit bureaus. You will not be charged — I will downgrade you to the
+  free version before the trial ends.
+</p>
+
+<p className="mt-3 text-sm text-zinc-300">
+  Enter your info below and I’ll text you the next step.
+</p>
 
             <div className="mt-5 grid gap-3">
               <input
