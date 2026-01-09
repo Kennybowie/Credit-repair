@@ -1,197 +1,183 @@
-mport Image from "next/image";
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-zinc-950 text-white">
-      {/* Top contact bar */}
-      <div className="w-full bg-blue-700 text-white text-xs">
-        <div className="mx-auto max-w-5xl px-5 py-2 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <a href="tel:8723445076" className="flex items-center gap-1">
-              📞 <span>872-344-5076</span>
-            </a>
-            <a
-              href="mailto:contact@bowiemanagment.com"
-              className="flex items-center gap-1"
-            >
-              ✉️ <span>contact@bowiemanagment.com</span>
-            </a>
-          </div>
+  return (
+    <main className="min-h-screen bg-zinc-950 text-white">
+      <div className="mx-auto max-w-5xl px-5 py-10">
+        {/* Top bar */}
+        <header className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/bowie-logo.png"
+              alt="Bowie Management Logo"
+              width={50}
+              height={50}
+              priority
+            />
+            <span className="text-sm font-semibold tracking-wide">
+              Bowie Management LLC
+            </span>
+          </div>
+          <div className="text-xs text-zinc-400">
+            Credit Repair • Funding
+          </div>
+        </header>
 
-          <a
-            href="https://instagram.com/ske_nny"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="h-4 w-4"
-            >
-              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5z" />
-              <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
-              <circle cx="17.5" cy="6.5" r="1.2" />
-            </svg>
-          </a>
-        </div>
-      </div>
+        {/* Hero */}
+        <section className="mt-10 grid items-center gap-8 md:grid-cols-2">
+          <div>
+            <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+              Credit & Funding Specialist
+            </h1>
 
-      <div className="mx-auto max-w-5xl px-5 py-10">
-        {/* Top bar */}
-        <header className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/bowie-logo.png"
-              alt="Bowie Management Logo"
-              width={50}
-              height={50}
-              priority
-            />
-            <span className="text-sm font-semibold tracking-wide">
-              Bowie Management LLC
-            </span>
-          </div>
+            <p className="mt-4 text-zinc-300 leading-7">
+              I help people clean up their credit, build strong profiles, and
+              position themselves to get approved for lines of credit — whether
+              you’re working toward a house, a car, or more financial freedom.
+            </p>
 
-          <div className="text-xs text-zinc-400">
-            Credit Repair • Funding
-          </div>
-        </header>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {[
+                "Dispute strategy + cleanup",
+                "Credit building plan",
+                "Utilization + reporting optimization",
+                "Funding roadmap",
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-200"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
 
-        {/* Hero */}
-        <section className="mt-10 grid items-center gap-8 md:grid-cols-2">
-          <div>
-            <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-              Credit & Funding Specialist
-            </h1>
+            <div className="mt-7 flex gap-3">
+              <a
+                href="#consult"
+                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-black transition active:scale-[0.99]"
+              >
+                Start with a Consultation
+              </a>
+              <a
+                href="#story"
+                className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition active:scale-[0.99]"
+              >
+                My Story
+              </a>
+            </div>
 
-            <p className="mt-4 text-zinc-300 leading-7">
-              I help people clean up their credit, build strong profiles, and
-              position themselves to get approved for lines of credit — whether
-              you’re working toward a house, a car, or more financial freedom.
-            </p>
+            <p className="mt-3 text-xs text-zinc-500">
+              After you submit your info, I’ll text you the next step.
+            </p>
+          </div>
 
-            <div className="mt-6 flex flex-wrap gap-3">
-              {[
-                "Dispute strategy + cleanup",
-                "Credit building plan",
-                "Utilization + reporting optimization",
-                "Funding roadmap",
-              ].map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-200"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
+          {/* Consultation Card */}
+          <div
+            id="consult"
+            className="rounded-2xl border border-white/10 bg-white/5 p-6"
+          >
+            <h2 className="text-lg font-semibold">Initial Consultation</h2>
+            <p className="mt-1 text-sm text-zinc-300">
+              Enter your info and I’ll text you the next step.
+            </p>
 
-            <div className="mt-7 flex gap-3">
-              <a
-                href="#consult"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-black"
-              >
-                Start with a Consultation
-              </a>
-              <a
-                href="#story"
-                className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white"
-              >
-                My Story
-              </a>
-            </div>
+            <div className="mt-5 grid gap-3">
+              <input
+                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+                placeholder="Full name"
+              />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+                placeholder="Phone number"
+                inputMode="tel"
+              />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+                placeholder="Email"
+                inputMode="email"
+              />
 
-            <p className="mt-3 text-xs text-zinc-500">
-              After you submit your info, I’ll text you the next step.
-            </p>
-          </div>
+              <button className="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm font-bold text-black transition active:scale-[0.99]">
+                Request Consultation
+              </button>
 
-          {/* Consultation card */}
-          <div
-            id="consult"
-            className="rounded-2xl border border-white/10 bg-white/5 p-6"
-          >
-            <h2 className="text-lg font-semibold">Initial Consultation</h2>
-            <p className="mt-1 text-sm text-zinc-300">
-              Enter your info and I’ll text you the next step.
-            </p>
+              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4 text-xs text-zinc-300">
+                <div className="font-semibold text-white">
+                  What happens next?
+                </div>
+                <p className="mt-2">
+                  You’ll get a text from me with the next step and what I need to
+                  review your situation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <div className="mt-5 grid gap-3">
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Full name"
-              />
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Phone number"
-                inputMode="tel"
-              />
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Email"
-                inputMode="email"
-              />
+        {/* Story */}
+        <section
+          id="story"
+          className="mt-12 grid gap-8 rounded-2xl border border-white/10 bg-white/5 p-6 md:grid-cols-[180px,1fr]"
+        >
+          <div className="mx-auto">
+            <div className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900">
+              <Image
+                src="/kenny.jpg"
+                alt="Bowie Management"
+                width={360}
+                height={360}
+                className="h-auto w-full object-cover"
+                priority
+              />
+            </div>
+          </div>
 
-              <button className="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm font-bold text-black">
-                Request Consultation
-              </button>
+          <div>
+            <h3 className="text-xl font-semibold">My Story</h3>
 
-              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4 text-xs text-zinc-300">
-                <div className="font-semibold text-white">
-                  What happens next?
-                </div>
-                <p className="mt-2">
-                  You’ll get a text from me with the next step and what I need to
-                  review your situation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+            <p className="mt-3 text-zinc-300 leading-7">
+              Over the past few years, I’ve accumulated hundreds of thousands of
+              dollars in available credit, started several businesses, and
+              helped many people repair and structure their credit the right way.
+            </p>
 
-        {/* Story */}
-        <section
-          id="story"
-          className="mt-12 grid gap-8 rounded-2xl border border-white/10 bg-white/5 p-6 md:grid-cols-[180px,1fr]"
-        >
-          <div className="mx-auto">
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900">
-              <Image
-                src="/kenny.jpg"
-                alt="Bowie Management"
-                width={360}
-                height={360}
-                className="h-auto w-full object-cover"
-                priority
-              />
-            </div>
-          </div>
+            <p className="mt-3 text-zinc-300 leading-7">
+              I also made real mistakes along the way. I overextended myself,
+              lost everything, and ultimately went through bankruptcy. Those
+              experiences taught me lessons most people never learn — and now
+              my goal is to help others move smarter and build a stronger
+              financial future.
+            </p>
 
-          <div>
-            <h3 className="text-xl font-semibold">My Story</h3>
+            <div className="mt-5 grid gap-3 sm:grid-cols-3">
+              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4">
+                <div className="text-sm font-semibold">Goal-focused</div>
+                <div className="mt-1 text-xs text-zinc-400">
+                  House, car, or funding — built around your target.
+                </div>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4">
+                <div className="text-sm font-semibold">Simple steps</div>
+                <div className="mt-1 text-xs text-zinc-400">
+                  Clear actions, no confusing credit jargon.
+                </div>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4">
+                <div className="text-sm font-semibold">Text updates</div>
+                <div className="mt-1 text-xs text-zinc-400">
+                  You’ll know what’s happening at each step.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <p className="mt-3 text-zinc-300 leading-7">
-              Over the past few years, I’ve accumulated hundreds of thousands of
-              dollars in available credit, started several businesses, and
-              helped many people repair and structure their credit the right
-              way.
-            </p>
-
-            <p className="mt-3 text-zinc-300 leading-7">
-              I also made real mistakes — overextended myself, lost everything,
-              and went through bankruptcy. Those lessons now allow me to help
-              others move smarter and build a stronger financial future.
-            </p>
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="mt-10 text-center text-xs text-zinc-500">
-          © {new Date().getFullYear()} Bowie Management LLC
-        </footer>
-      </div>
-    </main>
-  );
+        {/* Footer */}
+        <footer className="mt-10 text-center text-xs text-zinc-500">
+          © {new Date().getFullYear()} Bowie Management LLC
+        </footer>
+      </div>
+    </main>
+  );
 }
