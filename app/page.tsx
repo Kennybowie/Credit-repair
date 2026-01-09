@@ -23,9 +23,10 @@ export default function Home() {
 
         {/* Hero */}
         <section className="mt-10 grid items-center gap-8 md:grid-cols-2">
+          {/* LEFT COLUMN */}
           <div>
             <h1 className="text-center text-4xl font-semibold tracking-tight md:text-5xl">
-              Credit & Funding Specialist
+              Credit &amp; Funding Specialist
             </h1>
 
             <p className="mt-4 text-zinc-300 leading-7">
@@ -51,8 +52,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Consultation Card */}
+          {/* RIGHT COLUMN */}
           <div>
+            {/* Consultation Card */}
             <h2 className="mb-3 text-center text-lg font-semibold text-white">
               Free Consultation
             </h2>
@@ -68,8 +70,8 @@ export default function Home() {
                 <span className="font-semibold text-white">upgrade</span> the
                 account and put a card on file to use the{" "}
                 <span className="font-semibold text-white">free trial</span> so
-                we can view all three credit bureaus. You will not be charged —
-                I will downgrade you to the free version before the trial ends.
+                we can view all three credit bureaus. You will not be charged — I
+                will downgrade you to the free version before the trial ends.
               </p>
 
               <p className="mt-3 text-sm text-zinc-300">
