@@ -31,7 +31,7 @@ export default function Home() {
 </h1>
 
             <p className="mt-4 text-zinc-300 leading-7">
-              We people clean up their credit, build strong profiles, and
+              We help people clean up their credit, build strong profiles, and
               position themselves to get approved for lines of credit, loans, cars, housing, etc
               
             </p>
