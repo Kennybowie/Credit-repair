@@ -103,9 +103,7 @@ export default function Home() {
               </button>
 
               <div className="rounded-xl border border-white/10 bg-zinc-900 p-4 text-xs text-zinc-300">
-                <div className="font-semibold text-white">
-                  What happens next?
-                </div>
+                <div className="font-semibold text-white">What happens next?</div>
                 <p className="mt-2">
                   You’ll get a text from me with the next step and what I need to
                   review your situation.
@@ -138,38 +136,16 @@ export default function Home() {
 
             <p className="mt-3 text-zinc-300 leading-7">
               Over the past few years, I’ve accumulated hundreds of thousands of
-              dollars in available credit, started several businesses, and
-              helped many people repair and structure their credit the right way.
+              dollars in available credit, started several businesses, and helped
+              many people repair and structure their credit the right way.
             </p>
 
             <p className="mt-3 text-zinc-300 leading-7">
-              I also made real mistakes along the way. I overextended myself,
-              lost everything, and ultimately went through bankruptcy. Those
-              experiences taught me lessons most people never learn — and now
-              my goal is to help others move smarter and build a stronger
-              financial future.
+              I also made real mistakes along the way — overextended myself, lost
+              everything, and went through bankruptcy. Those experiences taught
+              me lessons most people never learn until it’s too late, and now I
+              help others move smarter and build stronger financial futures.
             </p>
-
-            <div className="mt-5 grid gap-3 sm:grid-cols-3">
-              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4">
-                <div className="text-sm font-semibold">Goal-focused</div>
-                <div className="mt-1 text-xs text-zinc-400">
-                  House, car, or funding — built around your target.
-                </div>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4">
-                <div className="text-sm font-semibold">Simple steps</div>
-                <div className="mt-1 text-xs text-zinc-400">
-                  Clear actions, no confusing credit jargon.
-                </div>
-              </div>
-              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4">
-                <div className="text-sm font-semibold">Text updates</div>
-                <div className="mt-1 text-xs text-zinc-400">
-                  You’ll know what’s happening at each step.
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
