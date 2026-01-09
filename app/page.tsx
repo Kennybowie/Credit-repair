@@ -1,4 +1,4 @@
-import Image from "next/image";
+mport Image from "next/image";
 
 export default function Home() {
   return (
@@ -182,8 +182,7 @@ export default function Home() {
             <p className="mt-3 text-zinc-300 leading-7">
               I also made real mistakes — overextended myself, lost everything,
               and went through bankruptcy. Those lessons now allow me to help
-              others move smarter, avoid traps, and build a stronger financial
-              future.
+              others move smarter and build a stronger financial future.
             </p>
           </div>
         </section>
