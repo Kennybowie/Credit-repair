@@ -131,9 +131,20 @@ export default function Home() {
        
 
         {/* Footer */}
-        <footer className="mt-10 text-center text-xs text-zinc-500">
-          © {new Date().getFullYear()} Bowie Management LLC
-        </footer>
+       <footer className="mt-10 text-center text-xs text-zinc-500">
+  <div>© {new Date().getFullYear()} Bowie Management LLC</div>
+
+  <div className="mt-2 space-y-1">
+    <div>
+      📞 <a href="tel:8723445076" className="hover:text-white">872-344-5076</a>
+    </div>
+    <div>
+      ✉️ <a href="mailto:contact@bowiemanagment.com" className="hover:text-white">
+        contact@bowiemanagment.com
+      </a>
+    </div>
+  </div>
+</footer>
       </div>
     </main>
   );
