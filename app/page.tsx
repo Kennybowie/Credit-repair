@@ -50,14 +50,7 @@ export default function Home() {
                   {t}
                 </span>
               ))}
-            </div>
-
-            
-
-            <p className="mt-3 text-xs text-zinc-500">
-              After you submit your info, I’ll text you the next step.
-            </p>
-          </div>
+       
 
           {/* Consultation Card */}
   <h2 className="mb-3 text-center text-lg font-semibold text-white">
