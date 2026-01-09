@@ -70,8 +70,7 @@ export default function Home() {
            
 
 <p className="mt-2 text-sm text-zinc-300 leading-6">
-  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create
-  an account. When you sign up, please{" "}
+  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create an account. When you sign up, please{" "}
   <span className="font-semibold text-white">upgrade</span> the account and put a
   card on file to use the{" "}
   <span className="font-semibold text-white">free trial</span> so we can view all
