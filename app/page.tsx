@@ -120,8 +120,7 @@ export default function Home() {
               <div className="rounded-xl border border-white/10 bg-zinc-900 p-4 text-xs text-zinc-300">
                 <div className="font-semibold text-white">What happens next?</div>
                 <p className="mt-2">
-                  You’ll get a text from me with the next step and what I need to
-                  review your situation.
+                  You’ll get a text from me with the next step.
                 </p>
               </div>
             </div>
