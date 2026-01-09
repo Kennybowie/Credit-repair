@@ -75,9 +75,7 @@ export default function Home() {
   three credit bureaus. You will not be charged — I will downgrade you to the free version before the trial ends.
 </p>
 
-<p className="mt-3 text-sm text-zinc-300">
-  Enter your info below and I’ll text you with more information.
-</p>
+
 
             <div className="mt-5 grid gap-3">
               <input
