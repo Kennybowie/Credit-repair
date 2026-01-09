@@ -38,7 +38,7 @@ export default function Home() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               {[
-                "Dispute strategy + cleanup",
+                "Credit Sweep",
                 "Credit building plan",
                 "Utilization + reporting optimization",
                 "Funding roadmap",
