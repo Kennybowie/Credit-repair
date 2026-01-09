@@ -27,11 +27,11 @@ export default function Home() {
         <section className="mt-10 grid items-center gap-8 md:grid-cols-2">
           <div>
             <h1 className="text-center text-4xl font-semibold tracking-tight md:text-5xl">
-  Credit & Funding Specialist
+  Credit & Funding Program
 </h1>
 
             <p className="mt-4 text-zinc-300 leading-7">
-              I help people clean up their credit, build strong profiles, and
+              We people clean up their credit, build strong profiles, and
               position themselves to get approved for lines of credit, loans, cars, housing, etc
               
             </p>
