@@ -36,7 +36,7 @@ export default function Home() {
               
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-col gap-3">
               {[
                 "Credit Sweep",
                 "Credit building plan",
