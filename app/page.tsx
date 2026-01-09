@@ -3,6 +3,39 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
+      {/* Top contact bar */}
+<div className="w-full bg-blue-700 text-white text-xs">
+  <div className="mx-auto max-w-5xl px-5 py-2 flex items-center justify-between">
+    <div className="flex items-center gap-4">
+      <a href="tel:8723445076" className="flex items-center gap-1">
+        📞 <span>872-344-5076</span>
+      </a>
+      <a href="mailto:contact@bowiemanagment.com" className="flex items-center gap-1">
+        ✉️ <span>contact@bowiemanagment.com</span>
+      </a>
+    </div>
+
+    <div className="flex items-center gap-3">
+      <a
+        href="https://instagram.com/ske_nny"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          className="h-4 w-4"
+        >
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5z" />
+          <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" />
+          <circle cx="17.5" cy="6.5" r="1.2" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
       <div className="mx-auto max-w-5xl px-5 py-10">
         {/* Top bar */}
         <header className="flex items-center justify-between gap-4">
