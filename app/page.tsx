@@ -32,7 +32,7 @@ export default function Home() {
 
             <p className="mt-4 text-zinc-300 leading-7">
               I help people clean up their credit, build strong profiles, and
-              position themselves to get approved for lines of credit and loans
+              position themselves to get approved for lines of credit, loans, apartments, cars, etc.
             
             </p>
 
