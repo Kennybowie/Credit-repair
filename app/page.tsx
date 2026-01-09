@@ -60,15 +60,9 @@ export default function Home() {
           </div>
 
           {/* Consultation Card */}
-          <p className="mb-4 text-sm text-zinc-300 leading-6">
-  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create
-  an account. When you sign up, please <span className="font-semibold text-white">
-  UPGRADE</span> the account and put a card on file to utilize the
-  <span className="font-semibold text-white"> FREE TRIAL</span> so we can see all
-  three credit bureaus. You will not be charged — I will
-  <span className="font-semibold text-white"> downgrade</span> you to the free
-  version before the trial ends.
-</p>
+    <h2 className="mb-3 text-lg font-semibold text-white">
+  Free Consultation
+</h2>
           <div
             id="consult"
             className="rounded-2xl border border-white/10 bg-white/5 p-6"
