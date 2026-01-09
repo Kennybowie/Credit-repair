@@ -26,9 +26,9 @@ export default function Home() {
         {/* Hero */}
         <section className="mt-10 grid items-center gap-8 md:grid-cols-2">
           <div>
-            <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-              Credit & Funding Specialist
-            </h1>
+            <h1 className="text-center text-4xl font-semibold tracking-tight md:text-5xl">
+  Credit & Funding Specialist
+</h1>
 
             <p className="mt-4 text-zinc-300 leading-7">
               I help people clean up their credit, build strong profiles, and
