@@ -26,10 +26,12 @@ export async function POST(req: Request) {
     // This avoids the "blank white page" after submit:
     const url = new URL(req.url);
     return NextResponse.redirect(`${url.origin}/?submitted=1#consult`, 303);
-  } catch (e) {
-    return NextResponse.json(
-      { error: "Server error", message: e?.message },
-      { status: 500 }
-    );
-  }
+  } catch (e: unknown) {
+  const message = e instanceof Error ? e.message : String(e);
+
+  return NextResponse.json(
+    { error: "Server error", message },
+    { status: 500 }
+  );
+}
 }
