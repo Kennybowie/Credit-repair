@@ -3,7 +3,7 @@ import { supabase } from "@/app/lib/supabase";
 
 export const runtime = "nodejs";
 
-export async function POST(req) {
+export async function POST(req: Request) {
   try {
     const form = await req.formData();
 
