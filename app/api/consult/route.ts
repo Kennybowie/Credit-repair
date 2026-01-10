@@ -17,21 +17,27 @@ export async function POST(req: Request) {
       pin: form.get("pin") || null,
     };
 
-    const { error } = await supabase.from("Leads").insert([payload]);
+    const { error } = await supabase
+      .from("Leads")
+      .insert([payload]);
 
     if (error) {
-      return NextResponse.json({ error: error.message }, { status: 400 });
+      return NextResponse.json(
+        { error: error.message },
+        { status: 400 }
+      );
     }
 
-    // This avoids the "blank white page" after submit:
-    const url = new URL(req.url);
-    return NextResponse.redirect(`${url.origin}/?submitted=1#consult`, 303);
-  } catch (e: unknown) {
-  const message = e instanceof Error ? e.message : String(e);
+    // ✅ SUCCESS: redirect to thank-you page
+    return NextResponse.redirect(
+      new URL("/thank-you", req.url),
+      { status: 303 }
+    );
 
-  return NextResponse.json(
-    { error: "Server error", message },
-    { status: 500 }
-  );
-}
+  } catch (err) {
+    return NextResponse.json(
+      { error: "Server error" },
+      { status: 500 }
+    );
+  }
 }
