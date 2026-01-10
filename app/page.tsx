@@ -25,21 +25,20 @@ export default function Home() {
 
         {/* Hero */}
         <section className="mt-10 grid items-center gap-8 md:grid-cols-2">
-          {/* LEFT COLUMN */}
           <div>
-            <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-              Credit & Funding Specialist
-            </h1>
+            <h1 className="text-center text-4xl font-semibold tracking-tight md:text-5xl">
+  Credit & Funding Program
+</h1>
 
             <p className="mt-4 text-zinc-300 leading-7">
-              I help people clean up their credit, build strong profiles, and
-              position themselves to get approved for lines of credit — whether
-              you’re working toward a house, a car, or more financial freedom.
+              We help people clean up their credit, build strong profiles, and
+              position themselves to get approved for lines of credit, loans, cars, housing, etc
+              
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-col gap-3">
               {[
-                "Dispute strategy + cleanup",
+                "Credit Sweep",
                 "Credit building plan",
                 "Utilization + reporting optimization",
                 "Funding roadmap",
@@ -53,37 +52,32 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="mt-7 flex gap-3">
-              <a
-                href="#consult"
-                className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-black transition active:scale-[0.99]"
-              >
-                Start with a Consultation
-              </a>
-              <a
-                href="#story"
-                className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition active:scale-[0.99]"
-              >
-                My Story
-              </a>
-            </div>
+            
 
-            <p className="mt-3 text-xs text-zinc-500">
-              After you submit your info, I’ll text you the next step.
-            </p>
-          </div> {/* ✅ THIS CLOSING DIV WAS MISSING */}
+           
+          </div>
 
-          {/* RIGHT COLUMN – CONSULTATION CARD */}
+          {/* Consultation Card */}
+       
+<h2 className="mb-3 text-center text-lg font-semibold text-white">
+  Free Consultation
+</h2>
           <div
             id="consult"
             className="rounded-2xl border border-white/10 bg-white/5 p-6"
           >
-            <h2 className="text-lg font-semibold">Initial Consultation</h2>
-            <p className="mt-1 text-sm text-zinc-300">
-              Enter your info and I’ll text you the next step.
-            </p>
+           
 
-            <div className="mt-5 grid gap-3">
+<p className="mt-2 text-sm text-zinc-300 leading-6">
+  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create an account. When you sign up, please{" "} <span className="font-semibold text-white">upgrade</span> the account and put a
+  card on file to use the{" "}
+  <span className="font-semibold text-white">free trial</span> so we can view all
+  three credit bureaus. You will not be charged — I will downgrade you to the free version before the trial ends.
+</p>
+
+
+
+   <div className="mt-5 grid gap-3">
               <input
                 className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
                 placeholder="Full name"
@@ -124,12 +118,9 @@ export default function Home() {
               </button>
 
               <div className="rounded-xl border border-white/10 bg-zinc-900 p-4 text-xs text-zinc-300">
-                <div className="font-semibold text-white">
-                  What happens next?
-                </div>
+                <div className="font-semibold text-white">What happens next?</div>
                 <p className="mt-2">
-                  You’ll get a text from me with the next step and what I need to
-                  review your situation.
+                  You’ll get a text from me with the next step.
                 </p>
               </div>
             </div>
@@ -137,45 +128,30 @@ export default function Home() {
         </section>
 
         {/* Story */}
-        <section
-          id="story"
-          className="mt-12 grid gap-8 rounded-2xl border border-white/10 bg-white/5 p-6 md:grid-cols-[180px,1fr]"
-        >
-          <div className="mx-auto">
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900">
-              <Image
-                src="/kenny.jpg"
-                alt="Bowie Management"
-                width={360}
-                height={360}
-                className="h-auto w-full object-cover"
-                priority
-              />
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold">My Story</h3>
-
-            <p className="mt-3 text-zinc-300 leading-7">
-              Over the past few years, I’ve accumulated hundreds of thousands of
-              dollars in available credit, started several businesses, and helped
-              many people repair and structure their credit the right way.
-            </p>
-
-            <p className="mt-3 text-zinc-300 leading-7">
-              I also made real mistakes along the way — overextended myself, lost
-              everything, and went through bankruptcy. Those experiences taught
-              me lessons most people never learn until it’s too late, and now I
-              help others move smarter and build stronger financial futures.
-            </p>
-          </div>
-        </section>
+       
 
         {/* Footer */}
-        <footer className="mt-10 text-center text-xs text-zinc-500">
-          © {new Date().getFullYear()} Bowie Management LLC
-        </footer>
+    <footer className="mt-10 text-center text-xs text-zinc-500">
+  <div className="mb-2 space-y-1">
+    <div>
+      📞 <a href="tel:8723445076" className="hover:underline">
+        872-344-5076
+      </a>
+    </div>
+    <div>
+      ✉️ <a
+        href="mailto:contact@bowiemanagment.com"
+        className="hover:underline"
+      >
+        contact@bowiemanagment.com
+      </a>
+    </div>
+  </div>
+
+  <div className="mt-4">
+    © {new Date().getFullYear()} Bowie Management LLC
+  </div>
+</footer>
       </div>
     </main>
   );
