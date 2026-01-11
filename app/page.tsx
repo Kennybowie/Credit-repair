@@ -59,13 +59,14 @@ export default function Home() {
 
           {/* Consultation Card */}
        
-<h2 className="mb-3 text-center text-lg font-semibold text-white">
-  Free Consultation
-</h2>
+
           <div
             id="consult"
             className="rounded-2xl border border-white/10 bg-white/5 p-6"
           >
+            <h2 className="mb-3 text-center text-lg font-semibold text-white">
+  Free Consultation
+</h2>
            
 
 
