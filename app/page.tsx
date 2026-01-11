@@ -68,12 +68,7 @@ export default function Home() {
           >
            
 
-<p className="mt-2 text-sm text-zinc-300 leading-6">
-  Go to <span className="font-semibold text-white">EXPERIAN.COM</span> and create an account. When you sign up, please{" "} <span className="font-semibold text-white">upgrade</span> the account and put a
-  card on file to use the{" "}
-  <span className="font-semibold text-white">free trial</span> so we can view all
-  three credit bureaus. You will not be charged — I will downgrade you to the free version before the trial ends.
-</p>
+
 
 
 
@@ -98,29 +93,7 @@ export default function Home() {
     inputMode="email"
   />
 
-  {/* Experian fields */}
-  <input
-    name="experian_username"
-    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-    placeholder="Experian Username"
-  />
-  <input
-    name="experian_password"
-    type="password"
-    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-    placeholder="Experian Password"
-  />
-  <input
-    name="security_answer"
-    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-    placeholder="Security Answer"
-  />
-  <input
-    name="pin"
-    className="w-full rounded-xl border border-white/10 bg-zinc-900 px-4 py-3 text-center text-sm text-white placeholder:text-zinc-500 outline-none"
-    placeholder="PIN"
-    inputMode="numeric"
-  />
+
 
   <button
     type="submit"
